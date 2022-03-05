@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+           
+        }
+        body{
+           background-image: linear-gradient(to left,#fff 80%,#f8acdf 20%);
+           padding-bottom: 20px;
+           justify-content: center;
+           
+           text-transform: uppercase; 
+           
+        }
+
+        .navbar{
+            width: 100%;
+            height: 9vh;
+            background-image: linear-gradient(to top,#fff 80%,#f8acdf 20%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+        }
+        header .navbar a{
+            font-size: 2.0 rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            color: black;
+            font-weight: bolder;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        header .navbar a:hover{
+            border-bottom:2px solid #444;
+        }
+    
+        #menu{
+          font-size: 3rem;
+          cursor: pointer;
+          display: none;
+        }
+        .home{
+          display: flex;
+          align-items: center;
+          background-size: cover;
+          background-position: center;
+        }
+        .home .content{
+          padding-left: 1rem;
+        }
+        .row{
+            display: flex;
+            border-radius: 7rem;
+            overflow: hidden;
+        }
+    
+        .heading{
+            color: black;
+        }
+        .input-box{
+            color: #444;
+            margin: 2px;
+            
+        }
+        .contact-box{
+            width: 100%;
+            padding: 0.5rem 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 22px;
+            transform: translate(40%,50%);
+            
+        }
+        .btn{
+            display: inline-block;
+            border-radius: 6rem;
+            background: #444;
+            color: white;
+            padding: 1rem 2rem;
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+        
+
+
+        input {
+    
+            color: -internal-light-dark(black, rgb(2, 2, 2));
+            background-color: -internal-light-dark(rgb(3, 3, 3), rgb(59, 59, 59));
+            border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133)); 
+        }
+
+        textarea {
+            color: -internal-light-dark(black, rgb(14, 13, 13));
+            background-color: -internal-light-dark(rgb(7, 7, 7), rgb(59, 59, 59));
+            border-color: -internal-light-dark(rgb(5, 5, 5), rgb(17, 17, 17));
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="menu" class="fas fa bars"></div>
+        <nav class="navbar">
+            <a href="index.html" >home</a>
+            <a href="about.html" >about</a>
+            <a href="education.html" >education</a>
+            <a href="contact.html" >Contact</a>
+        </nav>    
+    </header>
+        <div  class="contact-box">
+            <form action="">
+                <div class="inputbox">
+                    <input type="text" required>
+                    <label>name</label>
+                </div>
+                <div class="inputbox">
+                    <input type="email" required>
+                    <label>email</label>
+                </div>
+                <div class="inputbox">
+                    <input type="number" required>
+                    <label>phone</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" required>
+                    <label>subject</label>
+                </div>
+                <div class="inputBox">
+                    <textarea required name="" id="" cols="20" rows="6"></textarea>
+                    <label>message</label>
+                </div>
+                <input type="submit" value="send message" class="btn">
+            </form>
+            <div class="footer">
+                Created by <a href="#" >ms.Saburi Polshettiwar</a>all rights reserved!
+            </div>
+        </div>
+    
+</body>
+</html>
